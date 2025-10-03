@@ -2,15 +2,22 @@
 Projeto acadêmico que investiga a potabilidade da água usando SVM Linear com validação cruzada estratificada e métricas robustas de avaliação. Foco em equilíbrio de classes e generalização do modelo.
 
 ## Autores e afiliação
-- Marcos Figueiredo: Universidade Estadual da Bahia
+Universidade: Universidade do Estado da Bahia (UNEB)
 
-+ Anthony Kauan: Universidade Estadual da Bahia
+Curso: Engenharia de Software
 
-+ Felipe Dantas: Universidade Estadual da Bahia
+Matéria: Aprendizado de Máquina em IA - Machine Learning
 
-+ Gabriel Boaventura: Universidade Estadual da Bahia
+Docente: Marcos Figueredo
 
-+ Caique Silva: Universidade Estadual da Bahia
+Discentes:
++ Anthony Kauan
+
++ Caique Silva
+
++ Gabriel Boaventura
+
++ Felipe Dasnta
 
 ## Visão geral
 O projeto prevê se uma amostra de água é potável com base em indicadores físico-químicos. Explora o “espaço de hipóteses” com SVM Linear, enfatizando generalização, validação cruzada e métricas que capturam desempenho em cenários com classes desbalanceadas.
