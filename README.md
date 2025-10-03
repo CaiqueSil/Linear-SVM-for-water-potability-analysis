@@ -17,7 +17,7 @@ Discentes:
 
 + Gabriel Boaventura
 
-+ Felipe Dasnta
++ Felipe Dantas
 
 ## Visão geral
 O projeto prevê se uma amostra de água é potável com base em indicadores físico-químicos. Explora o “espaço de hipóteses” com SVM Linear, enfatizando generalização, validação cruzada e métricas que capturam desempenho em cenários com classes desbalanceadas.
