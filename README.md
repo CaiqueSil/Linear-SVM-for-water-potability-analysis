@@ -73,24 +73,24 @@ O projeto prevê se uma amostra de água é potável com base em indicadores fí
   + **Matriz de confusão** com Yellowbrick.
 
 ## Resultados
-+**Acurácia**: 83%
++ **Acurácia**: 83%
 
-+**ROC AUC**: 72.4%
++ **ROC AUC**: 72.4%
 
-+**PR AUC**: 66.7%
++ **PR AUC**: 66.7%
 
-+**Matriz de confusão**: desempenho mediano, com distribuição de erros que sugere risco para uso operacional.
++ **Matriz de confusão**: desempenho mediano, com distribuição de erros que sugere risco para uso operacional.
 
 > Interpretação: Para o objetivo de análise de potabilidade, metas próximas de 90% seriam preferíveis; este SVM Linear apresenta desempenho apenas mediano e pode requerer ajustes ou modelos alternativos.
 
 ### Reprodutibilidade e execução
 ### Requisitos
-+Python: 3.9+
++ Python: 3.9+
 
-+Bibliotecas:
++ **Bibliotecas:**
 
-  +Essenciais: numpy, pandas, scikit-learn
+  + Essenciais: numpy, pandas, scikit-learn
 
-  +Visualização: plotly, seaborn, matplotlib, yellowbrick
+  + Visualização: plotly, seaborn, matplotlib, yellowbrick
 
-  +Utilitários: statistics
+  + Utilitários: statistics
