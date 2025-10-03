@@ -24,19 +24,19 @@ O projeto prevê se uma amostra de água é potável com base em indicadores fí
 - **Critérios de desempenho:** Acurácia, ROC AUC, PR AUC e matriz de confusão.
 
 ## Dados e features
-Fonte: Conjunto de indicadores de qualidade da água (ph, chloramines, sulfate, conductivity, trihalomethanes, turbidity, potability).
++ **Fonte:** Conjunto de indicadores de qualidade da água (ph, chloramines, sulfate, conductivity, trihalomethanes, turbidity, potability).
 
 ### Seleção de variáveis:
 
-Mantidas: ph, Chloramines, Sulfate, Conductivity, Trihalomethanes, Turbidity.
+++ **Mantidas:** ph, Chloramines, Sulfate, Conductivity, Trihalomethanes, Turbidity.
 
-Removidas: Solids.
+++ **Removidas:** Solids.
 
 ### Pré-processamento:
 
-Padronização: StandardScaler aplicado às features.
++ **Padronização:** StandardScaler aplicado às features.
 
-Divisão: StratifiedKFold em 100 partes para treino e teste.
++ **Divisão:** StratifiedKFold em 100 partes para treino e teste.
 
 ## Modelo, perda e hiperparâmetros
 Modelo: LinearSVC (SVM Linear).
