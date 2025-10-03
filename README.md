@@ -28,9 +28,9 @@ O projeto prevê se uma amostra de água é potável com base em indicadores fí
 
 ### Seleção de variáveis:
 
-++ **Mantidas:** ph, Chloramines, Sulfate, Conductivity, Trihalomethanes, Turbidity.
++ **Mantidas:** ph, Chloramines, Sulfate, Conductivity, Trihalomethanes, Turbidity.
 
-++ **Removidas:** Solids.
++ **Removidas:** Solids.
 
 ### Pré-processamento:
 
@@ -39,58 +39,58 @@ O projeto prevê se uma amostra de água é potável com base em indicadores fí
 + **Divisão:** StratifiedKFold em 100 partes para treino e teste.
 
 ## Modelo, perda e hiperparâmetros
-Modelo: LinearSVC (SVM Linear).
++ **Modelo:** LinearSVC (SVM Linear).
 
-Função de perda: hinge para penalizar classificações no lado errado da margem.
++ **Função de perda:** hinge para penalizar classificações no lado errado da margem.
 
-Regularização: Parâmetro C controla o equilíbrio entre ajuste aos dados e generalização.
++ **Regularização:** Parâmetro C controla o equilíbrio entre ajuste aos dados e generalização.
 
-Hiperparâmetros críticos:
++ **Hiperparâmetros críticos:**
 
--C: 1
+  - **C:** 1
 
--Loss: hinge
+  - **Loss:** hinge
 
--Max iter: 500000
+  - **Max iter:** 500000
 
--Class weight: balanced (atenção igual às classes, mesmo com desbalanceamento)
+  - **Class weight:** balanced (atenção igual às classes, mesmo com desbalanceamento)
 
 > A regularização evita que o modelo “decore” casos específicos. Um C alto foca em acertos no treino; um C baixo favorece generalização.
 
 ## Protocolo experimental
-Validação: StratifiedKFold(n_splits=100, shuffle=True, random_state=42).
++ **Validação:** StratifiedKFold(n_splits=100, shuffle=True, random_state=42).
 
-Pipeline: Padronização + LinearSVC.
++ **Pipeline:** Padronização + LinearSVC.
 
-Métricas calculadas:
-'''
-Acurácia média por fold.
++ **Métricas calculadas:**
 
-ROC AUC via cross_val_score.
+  + **Acurácia média por fold.**
 
-PR AUC via cross_val_score.
+  + **ROC AUC** via cross_val_score.
 
-Matriz de confusão com Yellowbrick.
-'''
+  + **PR AUC** via cross_val_score.
+
+  + **Matriz de confusão** com Yellowbrick.
+
 ## Resultados
-Acurácia: 83%
++**Acurácia**: 83%
 
-ROC AUC: 72.4%
++**ROC AUC**: 72.4%
 
-PR AUC: 66.7%
++**PR AUC**: 66.7%
 
-Matriz de confusão: desempenho mediano, com distribuição de erros que sugere risco para uso operacional.
++**Matriz de confusão**: desempenho mediano, com distribuição de erros que sugere risco para uso operacional.
 
 > Interpretação: Para o objetivo de análise de potabilidade, metas próximas de 90% seriam preferíveis; este SVM Linear apresenta desempenho apenas mediano e pode requerer ajustes ou modelos alternativos.
 
 ### Reprodutibilidade e execução
 ### Requisitos
-Python: 3.9+
++Python: 3.9+
 
-Bibliotecas:
++Bibliotecas:
 
-Essenciais: numpy, pandas, scikit-learn
+  +Essenciais: numpy, pandas, scikit-learn
 
-Visualização: plotly, seaborn, matplotlib, yellowbrick
+  +Visualização: plotly, seaborn, matplotlib, yellowbrick
 
-Utilitários: statistics
+  +Utilitários: statistics
