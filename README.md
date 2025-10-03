@@ -1,7 +1,7 @@
 # SVM linear para análise da potabilidade da água
-Projeto acadêmico que investiga a potabilidade da água usando SVM Linear com validação cruzada estratificada e métricas robustas de avaliação. Foco em equilíbrio de classes e generalização do modelo.
+## Projeto acadêmico que investiga a potabilidade da água usando SVM Linear com validação cruzada estratificada e métricas robustas de avaliação. Foco em equilíbrio de classes e generalização do modelo.
 
-Autores e afiliação
+# Autores e afiliação
 Anthony Kauan: Universidade Estadual da Bahia
 
 Felipe Dantas: Universidade Estadual da Bahia
@@ -12,7 +12,7 @@ Caique Silva: Universidade Estadual da Bahia
 
 Marcos Figueiredo: Universidade Estadual da Bahia
 
-Visão geral
+# Visão geral
 O projeto prevê se uma amostra de água é potável com base em indicadores físico-químicos. Explora o “espaço de hipóteses” com SVM Linear, enfatizando generalização, validação cruzada e métricas que capturam desempenho em cenários com classes desbalanceadas.
 
 Pergunta central: É possível prever potabilidade com dados corretos?
