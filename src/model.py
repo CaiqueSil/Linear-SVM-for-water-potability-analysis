@@ -1,4 +1,3 @@
-# src/model.py
 from sklearn.svm import LinearSVC
 from sklearn.pipeline import Pipeline
 from sklearn.impute import SimpleImputer
