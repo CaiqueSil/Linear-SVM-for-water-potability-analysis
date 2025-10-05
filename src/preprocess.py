@@ -1,4 +1,3 @@
-# src/preprocess.py
 import pandas as pd
 from src.config import FEATURE_COLUMNS, TARGET_COLUMN
 
